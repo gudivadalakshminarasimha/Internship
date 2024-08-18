@@ -1,0 +1,13 @@
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 16px;
+}

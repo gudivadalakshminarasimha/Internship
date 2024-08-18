@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./employee-detail.component.css">
+</head>
+<body>
+    <div class="container">
+        <mat-card>
+          <mat-card-title>Employee Details</mat-card-title>
+          <mat-card-content>
+            <form (ngSubmit)="onSave()" #employeeForm="ngForm">
+              <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" [(ngModel)]="employee.name" name="name" required>
+              </mat-form-field>
+      
+              <mat-form-field appearance="fill">
+                <mat-label>Department</mat-label>
+                <input matInput placeholder="Department" [(ngModel)]="employee.department" name="department" required>
+              </mat-form-field>
+      
+              <mat-form-field appearance="fill">
+                <mat-label>Position</mat-label>
+                <input matInput placeholder="Position" [(ngModel)]="employee.position" name="position" required>
+              </mat-form-field>
+      
+              <mat-form-field appearance="fill">
+                <mat-label>Salary</mat-label>
+                <input matInput placeholder="Salary" [(ngModel)]="employee.salary" name="salary" type="number" required>
+              </mat-form-field>
+      
+              <button mat-raised-button color="primary" type="submit">Save</button>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      
+      
+</body>
+</html>
